@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+}
+#header_text {
+    margin: 0.5%;
+    font-size:36px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    background-color: linear-gradient(90deg, white, black, white);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    animation: animate 5s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+@media only screen and (max-width: 510px) {
+    #header_text {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #header_text {
+        font-size: 20px;
+    }
+}
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
